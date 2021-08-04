@@ -8,3 +8,4 @@ Exciting tours for adventurous people.
 * sass
 * ~~javascript~~
 
+# run npm install
