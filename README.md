@@ -1,7 +1,5 @@
 # Natours
-Exciting tours for adventurous people
-A landing page of a tour website 
-
+Exciting tours for adventurous people 
 ## technologies
 **list of all technologies used**
 * html
