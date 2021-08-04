@@ -1,0 +1,80 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-dark, 0.1);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg);
+  font-size: $default-font-size;
+background-color: $color-grey-light-1;
+
+@include respond(tab-port){
+  width: 100%;
+  padding: 4rem;
+  padding-left: 7rem;
+}
+
+@include respond(phone){
+  transform: translateX(-3rem) skewX(0);
+  
+  
+}
+
+
+  &__shape {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+
+    float: left;
+
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+
+    @include respond(phone){
+      transform: translateX(-3rem) skewX(0);
+      
+      
+    }
+  }
+  &__img {
+    height: 100%;
+    transition: all 0.5s;
+    transform: translateX(-4rem) scale(1.4);
+   
+      }
+  &__text {
+    transform: skewX(12deg);
+    @include respond(phone){
+      transform: translateX(-3rem) skewX(0);
+      
+      
+    }
+  }
+  &__caption {
+    transition: all 0.5s;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    opacity: 0;
+    //   backface-visibility: hidden;
+  }
+  &:hover &__caption {
+    
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  &:hover &__img {
+    filter: blur(3px) brightness(60%);
+    transform: translateX(-4rem) scale(1);
+    
+  }
+}

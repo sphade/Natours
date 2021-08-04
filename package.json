@@ -1,0 +1,14 @@
+{
+  "name": "Natours",
+  "version": "1.0.0",
+  "description": "nuator website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass css/main.scss css/main.css"
+  },
+  "author": "lawal",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
